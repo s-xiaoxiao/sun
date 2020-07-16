@@ -1,9 +1,17 @@
 <template>
-  <button class="g-button">按钮</button>
+  <button class="g-button" :class="{[`icon-${iconPosition}`]:true}">
+    <svg class="icon">
+      <use :xlink:href=`#i-${icon}`></use>
+    </svg>
+    <span class="content">
+    <slot></slot>
+    </span>
+  </button>
 </template>
 
 <script>
   export default {
+    props: ['icon', 'iconPosition']
   }
 </script>
 
@@ -15,14 +23,40 @@
     border-radius: var(--button-radius);
     border: 1px solid var(--border-color);
     background: var(--button-bg);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
     &:hover {
       border-color: var(--border-color-hover);
     }
+
     &:active {
       background-color: var(--button-active-bg);
     }
+
     &:focus {
       outline: none;
+    }
+
+    > .icon {
+      order: 1;
+      margin-right: .3em;
+    }
+
+    > .content {
+      order: 2;
+    }
+
+    &.icon-right {
+      > .icon {
+        order: 2;
+        margin: 0 0 0 .3em;
+      }
+
+      > .content {
+        order: 1
+      }
     }
   }
 </style>
