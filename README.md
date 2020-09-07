@@ -17,8 +17,8 @@
     
     ```css
     *,*::before,*::after{box-sizing:border-box;}
+    /* e8 及以上浏览器都支持此样式 */
     ```
-   /*ie8 及以上浏览器都支持此样式*/
    
    目前使用前，需要设置颜色变量
    ```css
@@ -32,12 +32,12 @@
       --border-color: #999;
       --border-color-hover: #666;
     }
+    /* ie 15 及以上浏览器都支持*/
    ``` 
-   /* ie 15 及以上浏览器都支持*/
-   /*在使用ie时 要用edge 渲染*/
    ```html
+    <!-- 在使用ie时 要用edge 渲染 -->
     < meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
-   /* 以上代码可兼容 ie 根据实际情况 此条可参考*/
+    <!-- 以上代码可兼容 ie 根据实际情况 此条可参考 -->
    ```
 2. 安装
 
