@@ -4,10 +4,10 @@
   "description": "这是一个 Vue UI",
   "main": "dist/index.js",
   "scripts": {
+    "start": "npx parcel index.html --no-cache",
     "dev-test": "parcel watch test/* --no-cache & karma start",
     "test": "parcel build test/* no-cache --no-minify && karma start --single-run"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/s-xiaoxiao/sun.git"
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/s-xiaoxiao/sun#readme",
   "dependencies": {
+    "git-open": "^2.1.0",
     "parcel-bundler": "^1.12.4",
     "vue": "^2.6.11",
     "vue-hot-reload-api": "^2.3.4"
