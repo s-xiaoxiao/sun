@@ -12,6 +12,7 @@
       padding: 0;
       box-sizing: border-box
     }
+
     /*:root伪类 对于HTML表示根元素<html>*/
     :root {
       --button-height: 32px;
@@ -35,23 +36,27 @@
 </head>
 <body>
 <div id="app">
-  <g-button icon="settings" icon-position="right" :loading="loading1" @click="loading1 = !loading1">
-    按钮
-  </g-button>
-  <g-button icon="settings" icon-position="left" :loading="loading2" @click="loading2 = !loading2">
-    按钮
-  </g-button>
-  <g-button :loading="loading3" @click="loading3 = !loading3">加载</g-button>
+  <g-input value="张三" disabled></g-input>
+  <g-input value="张三" readonly></g-input>
+  <g-input value="张三" error="名字不对"></g-input>
+  <g-input value="张三" ></g-input>
+  <div style="margin:20px">
+    <g-button icon="settings" icon-position="right" :loading="loading1" @click="loading1 = !loading1">
+      按钮
+    </g-button>
+    <g-button icon="settings" icon-position="left" :loading="loading2" @click="loading2 = !loading2">
+      按钮
+    </g-button>
+    <g-button :loading="loading3" @click="loading3 = !loading3">加载</g-button>
 
-  <g-button-group>
+    <g-button-group>
       <g-button icon="left">上一页</g-button>
-    <g-button>更多</g-button>
-    <g-button icon="right" icon-position="right">下一页</g-button>
-  </g-button-group>
+      <g-button>更多</g-button>
+      <g-button icon="right" icon-position="right">下一页</g-button>
+
+    </g-button-group>
+  </div>
 </div>
-<div id="test"></div>
-<div id="test2"></div>
-<div id="test4"></div>
 <script src="./src/app.js"></script>
 </body>
 </html>

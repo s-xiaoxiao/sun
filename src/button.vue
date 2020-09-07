@@ -11,6 +11,7 @@
 <script>
   import Icon from './icon.vue'
   export default {
+    name:'XiaoxiaoButton',
     // props: ['icon', 'iconPosition']
     components:{'g-icon':Icon},
     props:{
@@ -30,7 +31,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   @keyframes spin { 0%{transform: rotate(0deg)} 100%{transform:rotate(360deg)} }
   .g-button {font-size: var(--font-size);
     height: var(--button-height);padding: 0 1em;border-radius: var(--button-radius);border: 1px solid var(--border-color);

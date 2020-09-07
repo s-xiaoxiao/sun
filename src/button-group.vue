@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'button-group',
+    name: 'XiaoxiaoButtonGroup',
     mounted() {
       for(let node of this.$el.children){
         if(node.localName !== 'button'){
@@ -17,7 +17,7 @@
   };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .g-button-group{
     display: inline-flex;
     vertical-align: middle;
