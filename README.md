@@ -1,8 +1,10 @@
-# xiaoxiao-ui  一个 Vue UI 组件
-[![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
-![npm](https://img.shields.io/npm/dy/xiaoxiao-ui)
-![npm](https://img.shields.io/npm/v/xiaoxiao-ui)
-![NPM](https://img.shields.io/npm/l/xiaoxiao-ui)
+<h1 align="center">xiaoxiao-ui  一个 Vue UI 组件</h1>
+<p align="center">
+<img src="https://travis-ci.com/travis-ci/travis-web.svg?branch=master">
+<img src="https://img.shields.io/npm/dy/xiaoxiao-ui">
+<img src="https://img.shields.io/npm/v/xiaoxiao-ui">
+<img src="https://img.shields.io/npm/l/xiaoxiao-ui">
+</p>
 ## 介绍 
 这是我在学习Vue过程中做的一个UI库，可以使用以及可供参考
 ## 开始使用
