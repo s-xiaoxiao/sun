@@ -46,16 +46,32 @@
 
 3. 引入
    ```javascript
-   import { Button, ButtonGroup, Icon} from 'xiaoxiao-ui'
+   //按需引入 ui 组件
+   import { Button,Input, ButtonGroup, Icon} from 'xiaoxiao-ui'
    import "xiaoxiao-ui/dist/index.css"
    
    export default{
      components:{
-       "g-button":Button
+       "g-button":Button,
+       "g-input":Input
      }
    }
    ```
+   * g-button 使用方法
+   ```vue
+    <g-button icon="settings">设置</g-button> 
+   
+   //下次更新 支持的icon图标名，以及 g-button 接收的值
+   ```
+   * g-input 使用方法
+   ```vue
+     <g-input v-model="message"></g-input>
+     <g-input v-model="message" disabled></g-input>  //不可用
+     <g-input v-model="message" readonly></g-input>  //只读
+     <g-input v-model="message" error="名字不对"></g-input> //根据message的值判断传入error值。
      
+     当使用input时，目前 组件的事件click、change、input、focus、blur。使用emit返回最新值
+   ```  
 ## 文档
 ## 提问
 ## 变更记录

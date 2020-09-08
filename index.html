@@ -36,6 +36,8 @@
 </head>
 <body>
 <div id="app">
+  <g-input v-model="message"></g-input>
+  <p>{{message}}</p>
   <g-input value="张三" disabled></g-input>
   <g-input value="张三" readonly></g-input>
   <g-input value="张三" error="名字不对"></g-input>
