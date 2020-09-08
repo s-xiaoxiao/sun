@@ -39,7 +39,7 @@
   <g-input value="张三" disabled></g-input>
   <g-input value="张三" readonly></g-input>
   <g-input value="张三" error="名字不对"></g-input>
-  <g-input value="张三" ></g-input>
+  <g-input value="张三" @click="iclick" @change="ichange" @input="iinput" @blur="iblur" @focus="ifocus"></g-input>
   <div style="margin:20px">
     <g-button icon="settings" icon-position="right" :loading="loading1" @click="loading1 = !loading1">
       按钮
